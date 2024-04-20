@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./drop-silhouette.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Drip Pakistan</title>
+</head>
+
+<body>
+    <div id="cursor"> </div>
+    <header>
+        <div class="header-element  ">
+            <h2 id="logo">Drip <span id="circle-logo"></span></h2>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    Home
+                </li>
+                <li>
+                    About
+                </li>
+                <li>
+                    Contact
+                </li>
+            </ul>
+        </nav>
+        <div class="header-element">
+            <div id="btn-div">
+                <button id="callforaction">Login</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="mainContent">
+            <h6>A Realm Where Marketing Meets Creativity. </h6>
+
+            <h1>Let's Bring Up Your<br> Marketing Game </h1>
+
+            <div></div>
+
+            <p id="para1" class="para-aside">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate amet
+                cupiditate non vitae. Earum,
+                qui suscipit</p>
+            <p id="para2" class="para-aside">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate amet
+                cupiditate non vitae. Earum,
+                qui suscipit quos vitae facilis minima, soluta officia</p>
+        </div>
+
+        <div id="image-div">
+        </div>
+
+        <div id="capsule">
+            <div id="circle"></div>
+        </div>
+
+        <div class="side-nav" id="sidenav1">
+            <ul>
+                <li>Portfolio</li>
+                <li>Clients</li>
+            </ul>
+        </div>
+        <div class="side-nav" id="sidenav2">
+            <ul>
+                <li>History</li>
+                <li>Vision</li>
+            </ul>
+        </div>
+    </main>
+
+    <script>
+        let cursor = document.getElementById("cursor");
+
+        window.addEventListener('mousemove', function (details) {
+            let xValue = details.clientX;
+            let yValue = details.clientY;
+            cursor.style.left = `${xValue}px`;
+            cursor.style.top = `${yValue}px`;
+        })
+    </script>
+</body>
+
+</html>
